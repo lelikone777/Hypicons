@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
 .header-container {
   width: 95%;
   display: flex;
@@ -17,6 +23,11 @@
 
 .header-container {
   align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
 }
 
 .header-menu {
@@ -113,15 +124,8 @@
   opacity: 0.65;
 }
 
-body {
-  font-family: 'Manrope', sans-serif;
-  background-color: #000;
-  color: #fff;
-}
-
-.container {
-  width: 95%;
-  margin: 01 auto;
+.buyNow {
+  margin-bottom: 100px;
 }
 
 .buyNow-container {
