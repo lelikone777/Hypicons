@@ -159,7 +159,6 @@
     align-items: center
     display: flex
     img
-      display: block
       width: 80%
       height: 80%
       margin-right: auto
@@ -229,14 +228,42 @@
     padding-top: 200px
   .description-wrapper
     width: 80%
-  .description-card
-    margin-right: 43px
+    &-card
+      margin-right: 43px
 
 @media (max-width: 768px)
   .hero
-    height: 100%
+    height: 90%
     padding: 0
     margin: 0
+    padding-top: 30%
+  .description
+    &-wrapper
+      width: 100%
+      text-align: center
+    &-card
+      margin: 0 10px
+    &-title
+      text-align-last: center
+      margin-top: 50px
+  .buyNow
+    margin-top: 350px
+    &-container
+      padding: 0
+      position: relative
+      height: 500px
+    &-info
+      width: 100%
+      &-wrapper
+        margin: 0
+    &-image
+      width: 100%
+      position: absolute
+      z-index: -1
+      left: 330px
+      img
+        height: 50%
+        width: 50%
 
 
 // @media (max-width: 320px)

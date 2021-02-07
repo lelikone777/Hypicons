@@ -260,7 +260,6 @@ body {
 }
 
 .iconrequest-image img {
-  display: block;
   width: 80%;
   height: 80%;
   margin-right: auto;
@@ -353,15 +352,51 @@ body {
   .description-wrapper {
     width: 80%;
   }
-  .description-card {
+  .description-wrapper-card {
     margin-right: 43px;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
-    height: 100%;
+    height: 90%;
     padding: 0;
     margin: 0;
+    padding-top: 30%;
+  }
+  .description-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .description-card {
+    margin: 0 10px;
+  }
+  .description-title {
+    text-align-last: center;
+    margin-top: 50px;
+  }
+  .buyNow {
+    margin-top: 350px;
+  }
+  .buyNow-container {
+    padding: 0;
+    position: relative;
+    height: 500px;
+  }
+  .buyNow-info {
+    width: 100%;
+  }
+  .buyNow-info-wrapper {
+    margin: 0;
+  }
+  .buyNow-image {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 330px;
+  }
+  .buyNow-image img {
+    height: 50%;
+    width: 50%;
   }
 }
