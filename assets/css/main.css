@@ -81,11 +81,16 @@
 .description-container {
   width: 90%;
   margin: 0 auto;
+}
+
+.description-wrapper {
   display: flex;
+  width: 66%;
 }
 
 .description-card {
   margin-right: 86px;
+  width: 232px;
 }
 
 .description-title {
