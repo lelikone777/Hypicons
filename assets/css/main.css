@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 .header-container {
   width: 95%;
   display: flex;
@@ -24,8 +25,10 @@
 }
 
 .header-menu-item {
+  font-family: 'IBM Plex Mono', monospace;
   text-decoration: none;
   color: #fff;
+  opacity: 0.8;
 }
 
 .header-menu-item:not(:last-child) {
@@ -33,6 +36,7 @@
 }
 
 .header-button {
+  font-family: 'IBM Plex Mono', monospace;
   color: #fff;
   background-color: #9400FF;
   border: none;
@@ -53,6 +57,7 @@
 .hero-subtitle {
   font-size: 16px;
   line-height: 25px;
+  opacity: 0.8;
 }
 
 .hero-title {
@@ -65,6 +70,7 @@
 }
 
 .hero-button {
+  font-family: 'IBM Plex Mono', monospace;
   background-color: #9400FF;
   color: #fff;
   border-radius: 200px;
@@ -93,35 +99,74 @@
   line-height: 25px;
   padding: 24px 0 19px;
   text-align-last: left;
+  opacity: 0.8;
 }
 
 .description-text {
   font-size: 15px;
   line-height: 30px;
+  opacity: 0.65;
 }
 
 body {
+  font-family: 'Manrope', sans-serif;
   background-color: #000;
   color: #fff;
 }
 
 .container {
   width: 95%;
-  margin: 0 auto;
+  margin: 01 auto;
 }
 
 .buyNow-container {
+  padding-top: 100px;
   width: 87%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+}
+
+.buyNow-info {
+  width: 50%;
+}
+
+.buyNow-info-wrapper {
+  margin-top: 246px;
 }
 
 .buyNow-title {
   font-size: 48px;
   line-height: 62px;
+  margin-bottom: 23px;
+}
+
+.buyNow-text {
+  padding-left: 30px;
+  margin-bottom: 55px;
 }
 
 .buyNow-text li {
   font-size: 15px;
   line-height: 30px;
+  opacity: 0.8;
+}
+
+.buyNow-button {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #fff;
+  background: #9400FF;
+  border-radius: 200px;
+  padding: 15px 42px;
+  border: none;
+}
+
+.buyNow-image {
+  width: 50%;
+}
+
+.buyNow-image img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
