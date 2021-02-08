@@ -59,6 +59,10 @@ body {
   justify-content: space-between;
 }
 
+.header-menu-burgerbtn {
+  display: none;
+}
+
 .header-menu-item {
   font-family: 'IBM Plex Mono', monospace;
   text-decoration: none;
@@ -80,8 +84,8 @@ body {
 }
 
 .hero {
-  padding-top: 115px;
-  padding-bottom: 108px;
+  padding-top: 80px;
+  padding-bottom: 85px;
 }
 
 .hero-container {
@@ -126,7 +130,7 @@ body {
 
 .description-wrapper {
   display: flex;
-  width: 66%;
+  width: 80%;
 }
 
 .description-card {
@@ -150,22 +154,28 @@ body {
 
 .buyNow {
   margin-bottom: 100px;
+  height: 100vh;
 }
 
 .buyNow-container {
-  padding-top: 100px;
+  height: 100%;
+  padding-top: 50px;
   width: 87%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .buyNow-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50%;
 }
 
 .buyNow-info-wrapper {
-  margin-top: 246px;
+  height: 100%;
 }
 
 .buyNow-title {
@@ -191,8 +201,8 @@ body {
 }
 
 .buyNow-image img {
-  width: 100%;
-  height: 100%;
+  width: 595px;
+  height: 979px;
 }
 
 .rendered {
@@ -205,10 +215,6 @@ body {
 
 .rendered-pallette {
   width: 100%;
-}
-
-.bigsur {
-  margin-bottom: 195px;
 }
 
 .bigsur-title {
@@ -353,44 +359,88 @@ body {
     padding-top: 50px;
   }
   .description-wrapper {
-    width: 80%;
+    width: 90%;
   }
-  .description-wrapper-card {
-    margin-right: 43px;
+  .description-card {
+    margin-right: 23px;
   }
 }
 
-@media (max-width: 800px) {
-  .header-menu {
-    display: none;
-  }
+@media (max-width: 760px) {
   .hero {
-    padding: 0;
-    margin: 0;
-    padding-top: 30%;
+    padding-bottom: 20px;
+    padding-top: 100px;
   }
-  .description-wrapper {
-    width: 100%;
+  .hero-title {
+    font-size: 35px;
+    margin: 10px 0 25px;
+  }
+  .header-container {
+    position: relative;
+  }
+  .header-menu {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    top: -380px;
+    left: 50px;
+    bottom: 0;
+    right: 0;
+  }
+  .header-menu-item {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-top: 200px;
+    padding: 20px;
   }
-  .description-card {
-    margin: 0 10px;
+  .header-menu-item:not(:last-child) {
+    margin-right: 0;
   }
-  .description-title {
-    text-align-last: center;
-    margin-top: 50px;
+  .header-menu-burgerbtn {
+    display: flex;
+    top: 120%;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #fff;
+    background: #9400FF;
+    border-radius: 200px;
+    padding: 10px 32px;
+    border: none;
+    font-size: 100%;
   }
-}
-
-@media (max-width: 480px) {
+  .header-menu-active {
+    transform: translate(0%, 800%);
+    transition: 2s;
+  }
+  .header-menu-hiding {
+    transform: translate(0%, -300%);
+    transition: 2s;
+  }
   .description-wrapper {
-    flex-direction: column;
-  }
-  .description-card {
     width: 100%;
   }
-  .description-title {
-    margin-top: 20px;
+  .buyNow-info {
+    width: 100%;
+  }
+  .buyNow-image {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    right: 3%;
+    opacity: .3;
+    z-index: -1;
+  }
+  .bigsur-menu {
+    width: 33%;
+    margin-bottom: 20px;
+  }
+  .bigsur-menu-wrapper {
+    flex-wrap: wrap;
   }
 }
