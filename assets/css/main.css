@@ -59,6 +59,10 @@ body {
   justify-content: space-between;
 }
 
+.header-menu-burgerbtn {
+  display: none;
+}
+
 .header-menu-item {
   font-family: 'IBM Plex Mono', monospace;
   text-decoration: none;
@@ -353,44 +357,41 @@ body {
     padding-top: 200px;
   }
   .description-wrapper {
-    width: 80%;
+    width: 90%;
   }
-  .description-wrapper-card {
-    margin-right: 43px;
+  .description-card {
+    margin-right: 23px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
+  .header-container {
+    position: relative;
+  }
   .header-menu {
-    display: none;
-  }
-  .hero {
-    padding: 0;
-    margin: 0;
-    padding-top: 30%;
-  }
-  .description-wrapper {
-    width: 100%;
-    text-align: center;
-    margin-top: 200px;
-  }
-  .description-card {
-    margin: 0 10px;
-  }
-  .description-title {
-    text-align-last: center;
-    margin-top: 50px;
-  }
-}
-
-@media (max-width: 480px) {
-  .description-wrapper {
+    display: flex;
     flex-direction: column;
+    position: absolute;
+    top: -250%;
+    right: 30%;
   }
-  .description-card {
-    width: 100%;
+  .header-menu-item {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
   }
-  .description-title {
-    margin-top: 20px;
+  .header-menu-burgerbtn {
+    display: flex;
+  }
+  .header-menu-active {
+    transform: translate(0%, 150%);
+    transition: 2s;
+  }
+  .header-menu-hiding {
+    transform: translate(0%, -300%);
+    transition: 2s;
   }
 }

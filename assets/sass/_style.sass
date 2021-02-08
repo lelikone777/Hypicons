@@ -20,6 +20,8 @@
     &-menu
         display: flex
         justify-content: space-between
+        &-burgerbtn
+          display: none
         &-item
             font-family: 'IBM Plex Mono', monospace
             text-decoration: none
@@ -219,45 +221,48 @@
     opacity: 0.8
 
 // @media (max-width: 1200px)
-//   .hero
- 
-//   .description-wrapper
+
 
 
 @media (max-width: 1024px)
+  .header
   .hero
     padding-top: 200px
-  .description-wrapper
-    width: 80%
-    &-card
-      margin-right: 43px
-
-@media (max-width: 800px)
-  .header-menu
-    display: none
-  .hero
-    padding: 0
-    margin: 0
-    padding-top: 30%
   .description
     &-wrapper
-      width: 100%
-      text-align: center
-      margin-top: 200px
+      width: 90%
     &-card
-      margin: 0 10px
-    &-title
-      text-align-last: center
-      margin-top: 50px
+      margin-right: 23px
 
-@media (max-width: 480px)
-  .description
-    &-wrapper
+@media (max-width: 760px)
+  .header
+    &-container
+      position: relative
+    &-menu
+      display: flex
       flex-direction: column
-    &-card
-      width: 100%
-    &-title
-      margin-top: 20px
-  
+      position: absolute
+      top: -250%
+      right: 30%
+      &-item
+        width: 200px
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        padding: 20px
+      &-burgerbtn
+        display: flex
+      &-active
+        transform: translate( 0%, 150%)
+        transition: 2s
+      &-hiding
+        transform: translate( 0%, -300%)
+        transition: 2s
+
+      
+
+
+
 
     
